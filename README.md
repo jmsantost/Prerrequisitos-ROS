@@ -8,6 +8,7 @@ This repository is to help you know how to install Ros2 Humble.
   3. References
 
 ## 1.  PC Setup
+# En las imágenes aparecerá Ubuntu 18 pero es el mismo proceso para instalar ubuntu 22.04
 # Installing Ubuntu 22.04 version and ROS Humble
 
 ## Create a bootable Ubuntu USB
