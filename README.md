@@ -77,18 +77,26 @@ https://www.releases.ubuntu.com/22.04/
 ## Install ROS Humble
 
   1. Open the terminal. You can do that clicking on the square made of 9 points in the left-bottom corner, and searching the "Terminal" word.
-  2. Copy one at a time the given commands. It is possible you will need to put your password on the command window to run the below commands. 
+  2. Set locale
+  Make sure you have a locale which supports UTF-8. If you are in a minimal environment (such as a docker container), the locale may be something minimal like POSIX. We test with the following settings. However, it should be fine if you’re using a different UTF-8 supported locale.Make sure you have a locale which supports UTF-8. If you are in a minimal environment (such as a docker container), the locale may be something minimal like POSIX. We test with the following settings. However, it should be fine if you’re using a different UTF-8 supported locale.
+  
+    locate
+    sudo apt update && sudo apt install locales
+    sudo locale-gen en_US en_US.UTF-8
+    sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+    export LANG=en_US.UTF-8
+    
+    locale  # verify settings
+  3. Setup sources
+You will need to add the ROS 2 apt repository to your system.
 
-´´´bash
-locale  # check for UTF-8
+First ensure that the Ubuntu Universe repository is enabled.
+     
+    sudo apt install software-properties-common
+    sudo add-apt-repository universe
 
-sudo apt update && sudo apt install locales
-sudo locale-gen en_US en_US.UTF-8
-sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
-export LANG=en_US.UTF-8
 
-locale  # verify settings
-´´´
+
 
 ## Important programs that you may need to download
 
