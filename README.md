@@ -8,11 +8,11 @@ This repository is to help you know how to install Ros2 Humble.
   3. References
 
 ## 1.  PC Setup
-# Installing Ubuntu 18.04 version and ROS Melodic
+# Installing Ubuntu 22.04 version and ROS Humble
 
 ## Create a bootable Ubuntu USB
-  1. Click in the given link, then scroll down until the "Past releases and other flavours" section. Right there you will click on 18.04 version. Finally, download the Desktop Image file and remember the location of it. 
-https://ubuntu.com/download/alternative-downloads
+  1. Click in the given link, then scroll down until the "Past releases and other flavours" section. Right there you will click on 22.04 version. Finally, download the Desktop Image file and remember the location of it. 
+https://www.releases.ubuntu.com/22.04/
   2. Download Rufus, a free and open source USB stick writing tool. (https://rufus.ie/) You may find some versions, pick the standard and newest one. 
   3. Launch rufus and set like any of the images below. Then click on the START button and the download of the ISO file on the USB will begin. (Note: The difference between the two images is in the Partition Scheme, you should use MBR if your computer was made before 2010, otherwise, you should use GPT).
 
@@ -26,7 +26,7 @@ https://ubuntu.com/download/alternative-downloads
 
 ![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/956ce598-ac76-4d38-8d21-098b2da3f045)
 
-  3. Assign the appropriate amount of storage for Ubuntu. Ubuntu's page recommend at least 25GB, and you also should think about the programs you will use in that OS.
+  3. Assign the appropriate amount of storage for Ubuntu. Ubuntu's page recommend at least 50 GB, and you also should think about the programs you will use in that OS.
   4. Click on the Shrink button.
 
 ![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/04456856-4302-4b49-939c-71cc0026ec57)
@@ -71,23 +71,23 @@ https://ubuntu.com/download/alternative-downloads
 ![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/8ed751a0-ef61-40cb-8d5a-b27586ae1b77)
 
   14. From now on, every time you turn your laptop on, you will be asked about the OS you will use.
-  15. Before install ROS Melodic, be sure you have internet access in your Ubuntu OS.
+  15. Before install ROS Humble, be sure you have internet access in your Ubuntu OS.
 
-## Install ROS Melodic
+## Install ROS Humble
 
   1. Open the terminal. You can do that clicking on the square made of 9 points in the left-bottom corner, and searching the "Terminal" word.
   2. Copy one at a time the given commands. It is possible you will need to put your password on the command window to run the below commands. 
 
-    sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-    sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-    sudo apt update
-    sudo apt install ros-melodic-desktop-full
-    echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc source ~/.bashrc
-    sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential
-    sudo apt-get install python-pip
-    sudo pip install -U rosdep
-    sudo rosdep init
-    rosdep update
+´´´bash
+locale  # check for UTF-8
+
+sudo apt update && sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+locale  # verify settings
+´´´
 
 ## Important programs that you may need to download
 
