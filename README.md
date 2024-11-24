@@ -95,8 +95,35 @@ First ensure that the Ubuntu Universe repository is enabled.
      
     sudo apt install software-properties-common
     sudo add-apt-repository universe
+Now add the ROS 2 GPG key with apt.
 
+    sudo apt update && sudo apt install curl -y
+    sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
 
+Then add the repository to your sources list.
+
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+  4. Install ROS 2 packages
+
+Update your apt repository caches after setting up the repositories.
+
+    sudo apt update
+
+ROS 2 packages are built on frequently updated Ubuntu systems. It is always recommended that you ensure your system is up to date before installing new packages.
+
+    sudo apt upgrade
+
+Desktop Install: ROS, RViz, demos, tutorials.
+
+    sudo apt install ros-humble-desktop
+
+  5. Environment setup
+
+Set up your environment by sourcing the following file.
+
+    # Replace ".bash" with your shell if you're not using bash
+    # Possible values are: setup.bash, setup.sh, setup.zsh
+    source /opt/ros/humble/setup.bash
 
 
 ## Important programs that you may need to download
@@ -104,18 +131,5 @@ First ensure that the Ubuntu Universe repository is enabled.
   1. terminator (https://shanepark.tistory.com/313)
 
     sudo apt-get install terminator
-    
-  2. sublime text (https://jjeongil.tistory.com/1346)
 
-    sudo apt update
-    sudo apt install apt-transport-https ca-certificates curl software-properties-common
-    curl -fsSL https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-    sudo add-apt-repository "deb https://download.sublimetext.com/ apt/stable/"
-    sudo apt update
-    sudo apt install sublime-text
-    
-  3. screen recorder (https://pinkwink.kr/913)
-
-    sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
-    sudo apt-get update
 
