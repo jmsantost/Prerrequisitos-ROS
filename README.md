@@ -4,7 +4,7 @@ This repository is to help you know how to install Ros2 Humble.
 
 ## 0. Content
   1. PC Setup
-  2. ROS Installatiom
+  2. ROS Installation
   3. References
 
 ## 1.  PC Setup
@@ -74,7 +74,7 @@ https://www.releases.ubuntu.com/22.04/
   14. From now on, every time you turn your laptop on, you will be asked about the OS you will use.
   15. Before install ROS Humble, be sure you have internet access in your Ubuntu OS.
 
-## Install ROS Humble
+## 2. Install ROS Humble
 
   1. Open the terminal. You can do that clicking on the square made of 9 points in the left-bottom corner, and searching the "Terminal" word.
   2. Set locale
@@ -131,5 +131,7 @@ Set up your environment by sourcing the following file.
   1. terminator (https://shanepark.tistory.com/313)
 
     sudo apt-get install terminator
-
+## 3. References
+- Ubuntu Installation: https://youtu.be/wIj7sHK0SkQ?si=t1UHW8nSEUa0G_Qe
+- ROS 2 Installation: https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
 
