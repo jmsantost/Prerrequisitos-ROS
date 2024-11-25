@@ -17,24 +17,29 @@ https://www.releases.ubuntu.com/22.04/
   2. Download Rufus, a free and open source USB stick writing tool. (https://rufus.ie/) You may find some versions, pick the standard and newest one. 
   3. Launch rufus and set like any of the images below. Then click on the START button and the download of the ISO file on the USB will begin. (Note: The difference between the two images is in the Partition Scheme, you should use MBR if your computer was made before 2010, otherwise, you should use GPT).
 
-![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/89aa84a6-6d8d-451e-aa93-6c72e06750a3)
-![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/7f5820c3-c36b-4e42-9c8f-8913e0cbfa57)
+![image](https://github.com/user-attachments/assets/e5ade336-5928-41d8-a010-1ce1457fe477)
+
+![image](https://github.com/user-attachments/assets/61be5d51-1c54-4a1d-a8a2-c614d0f26f5a)
+
 
 ## Make a partition for Ubuntu
 
   1. Open the command prompt (cmd) and type diskmgmt.msc
   2. Choose the storage in the Volume Column that will be used to make the partition to store Ubuntu OS and right click on it, then press Shrink Volume button.
 
-![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/956ce598-ac76-4d38-8d21-098b2da3f045)
+![image](https://github.com/user-attachments/assets/49e1d836-2f6d-4ae6-bbaf-20f2d9673bd6)
+
 
   3. Assign the appropriate amount of storage for Ubuntu. Ubuntu's page recommend at least 50 GB, and you also should think about the programs you will use in that OS.
   4. Click on the Shrink button.
 
-![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/04456856-4302-4b49-939c-71cc0026ec57)
+![image](https://github.com/user-attachments/assets/b542b080-7cda-4df2-ae56-673ae9da7137)
+
 
   5. After that, you can check the partition was made, and it does not have any number, and it is unallocated.
 
-![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/5a0a0dce-5b34-41fc-b859-cfb4796c5acf)
+![image](https://github.com/user-attachments/assets/2d1f5a20-95b5-4162-bf7d-614f5e88a60a)
+
 
 ## Install Ubuntu
 
@@ -45,31 +50,37 @@ https://www.releases.ubuntu.com/22.04/
   5. After that, you have to set some feauters of the system such as the language. The following images show those easy steps. Note: It is recommended to click the Normal Installation option. 
   6. After select the Normal installation, it will ask you the Installation Type, you have to select the option "Something else" which allows you to use the previous made partition.
 
- ![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/7b428f2a-faef-4e39-8fec-9f1bd917e3e7)
- ![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/39f8488c-4d70-40c2-a2dd-697ab4590663)
- ![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/60e522ef-39a2-4e80-8a91-0e25857af08c)
- ![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/4f492d9a-614e-41e5-9d9b-73fe0343f062)
- ![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/d500b291-e718-4139-9322-49d01a1cd6af)
+![image](https://github.com/user-attachments/assets/18bc02bf-06e5-4d9a-b719-6dc802e26027)
+
+![image](https://github.com/user-attachments/assets/5642eb49-ff5c-467d-a58a-49b915c75556)
+
+![image](https://github.com/user-attachments/assets/f56a3bc4-ff86-42f4-bcbe-14b01302812d)
+
+![image](https://github.com/user-attachments/assets/193cde16-4bf8-44b9-b92b-468bf4d4ea38)
+
+![image](https://github.com/user-attachments/assets/32ec72cc-3470-4bf2-b903-56c0b9229e98)
 
   7. In the displayed list, look for the the "empty space" or "free space". You will know which one you should select based on the size of the partition you made, because it will have an approx size of the partition made.
   8. Then, click on the ‘+’ button under the list.
 
-![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/324006e9-0fe5-4d1d-92ec-506a2cd995c7)
+![image](https://github.com/user-attachments/assets/dad3482e-cc69-4af3-b66b-c087e79a40b5)
+
 
   9. A pop up window will apper, do not change the size, select the option "logical", and the option "The point where this space starts", and in the last one, look for the "/" option in the desplegable list.
   10. Then click on the Okay button, and that pop up window will close.
   11. Select the storage you just made, then select the Install now button, and click on Continue in the pop up window. 
 
-![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/15d7052f-0290-4cc3-9fe6-b40c3906c357)
-![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/44e64665-8e57-4628-9c6e-13e56b46daa2)
+![image](https://github.com/user-attachments/assets/ef7e39ec-a94c-4d3c-b9ed-a47ff1da92f2)
+![image](https://github.com/user-attachments/assets/589e3e0f-149e-44ce-81df-ddc6c9a1155e)
+
 
   12. You will need to select your country and time zone, and complete the blank spaces. After that, click on Continue and Ubuntu will installed.
   13. Finally, restart your PC.
+![image](https://github.com/user-attachments/assets/de884502-d309-4dc9-ad59-a80226a09897)
+![image](https://github.com/user-attachments/assets/ff6f17ee-719b-4082-afc6-4b1b97bd5f65)
+![image](https://github.com/user-attachments/assets/b151c38a-c157-48e8-a9a3-16133ff9d53a)
+![image](https://github.com/user-attachments/assets/354e66d1-a96d-42ad-b1ad-0fbaf8e11196)
 
-![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/c73d0504-c1fd-4479-95b1-e7c1b463dc31)
-![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/e1a7020b-c3f4-4faa-8d28-a985665d1a51)
-![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/85f9c9d7-a6ff-4b8d-9dfb-e14e7fd383d2)
-![image](https://github.com/nabihandres/COOP_tutorials/assets/108648272/8ed751a0-ef61-40cb-8d5a-b27586ae1b77)
 
   14. From now on, every time you turn your laptop on, you will be asked about the OS you will use.
   15. Before install ROS Humble, be sure you have internet access in your Ubuntu OS.
